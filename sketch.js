@@ -3,7 +3,7 @@ var q = 0;
 var g = 0;
 
 function preload(){
-  // put preload code here
+
 }
 
 function setup() {
@@ -31,8 +31,6 @@ function draw() {
     line(k, 0, (k)*cos(frameCount*4), (k)*sin(frameCount*4));
   }
 
-  //Sinistra Cerchio Colore
-
   if(frameCount > 100){
 
     //Testo
@@ -41,6 +39,7 @@ function draw() {
     text("move mouse to change active color", width/1.5, height/6.4);
 
     //Originale Colore
+
     translate(width/4,height/2.5);
     Color1();
     line(k, 0, (k)*cos(frameCount*4), (k)*sin(frameCount*4));
@@ -63,8 +62,10 @@ function draw() {
 
   pop();
 
-  //Sinistra Triplo
   if(frameCount > 260){
+
+    //Sinistra Triplo
+
     translate(width/4,height/1.4);
     Color1();
     line(k, 0, k*cos(frameCount/2), k*sin(frameCount/2) + 50*sin(p));
